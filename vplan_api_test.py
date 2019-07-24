@@ -12,8 +12,8 @@ while postfix != "":
         link += "&" + postfix
 session = requests.session()
 response = session.get(link).text
-json = json.loads(response);
-count = len(json['vertretungen']);
+json = json.loads(response)
+count = len(json['vertretungen'])
 print("\n")
 print("Using link: %s" % link)
 print ("%s entries found." % count)
